@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ES6",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "_build",
+    "baseUrl": "src",
+    "rootDir": ".",
+    "paths": {
+      "@/*": ["*"],
+      "@root/*": ["../*"],
+      "@config/*": ["./config/*"],
+      "@utils/*": ["./utils/*"],
+      "@lib/*": ["./lib/*"],
+      "@rpc/*": ["./lib/rpc/*"],
+      "@helpers/*": ["./lib/helpers/*"],
+      "@connection/*": ["./lib/connection/*"],
+      "@authentication/*": ["./lib/authentication/*"],
+      "@api/*": ["./app/api/*"],
+      "@multithreading/*": ["./app/multithreading/*"],
+      "@test/*": ["./test*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

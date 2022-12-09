@@ -1,0 +1,9 @@
+{
+  "restartable": "rs",
+  "verbose": true,
+  "watch": ["src"],
+  "ignore": [".git",".editorconfig"],
+  "ext": "ts,mjs,js,json,graphql",
+  "exec": "etsc && node ./_build/index.js",
+  "legacyWatch": true
+}
